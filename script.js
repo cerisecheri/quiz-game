@@ -17,48 +17,48 @@ const progressBar = document.getElementById("progress");
 // Quiz questions
 const quizQuestions = [
     {
-      question: "What is the capital of France?",
+      question: "What book holds the record for the fastest selling book in history?",
       answers: [
-        { text: "London", correct: false },
-        { text: "Berlin", correct: false },
-        { text: "Paris", correct: true },
-        { text: "Madrid", correct: false },
+        { text: "1984", correct: false },
+        { text: "The Picture of Dorian Grey", correct: false },
+        { text: "Harry Potter and the Deathly Hallows", correct: true },
+        { text: "Farenheight 451", correct: false },
       ],
     },
     {
-      question: "Which planet is known as the Red Planet?",
+      question: "The iconic “Hollywood” sign originally spelled out what word?",
       answers: [
-        { text: "Venus", correct: false },
-        { text: "Mars", correct: true },
-        { text: "Jupiter", correct: false },
-        { text: "Saturn", correct: false },
+        { text: "Hollywoo", correct: false },
+        { text: "Hollywoodland", correct: true },
+        { text: "Holly-Wood", correct: false },
+        { text: "Welcome to Hollywood!", correct: false },
       ],
     },
     {
-      question: "What is the largest ocean on Earth?",
+      question: "Beyoncé was in a girl group before Destiny's Child, but what was it called?",
       answers: [
-        { text: "Atlantic Ocean", correct: false },
-        { text: "Indian Ocean", correct: false },
-        { text: "Arctic Ocean", correct: false },
-        { text: "Pacific Ocean", correct: true },
+        { text: "Flo", correct: false },
+        { text: "The Dreamettes", correct: false },
+        { text: "TLC Jr.", correct: false },
+        { text: "Girls Tyme", correct: true },
       ],
     },
     {
-      question: "Which of these is NOT a programming language?",
+      question: "Fans of The Office will remember that “I want my baby back, baby back, baby back” is the main repeated line in a commercial jingle for what restaurant chain?",
       answers: [
-        { text: "Java", correct: false },
-        { text: "Python", correct: false },
-        { text: "Banana", correct: true },
-        { text: "JavaScript", correct: false },
+        { text: "Taco Bell", correct: false },
+        { text: "Applebee's", correct: false },
+        { text: "Chili's", correct: true },
+        { text: "McDonald's", correct: false },
       ],
     },
     {
-      question: "What is the chemical symbol for gold?",
+      question: "What is the highest-grossing film of all time",
       answers: [
-        { text: "Go", correct: false },
-        { text: "Gd", correct: false },
-        { text: "Au", correct: true },
-        { text: "Ag", correct: false },
+        { text: "Shawshank Redemption", correct: false },
+        { text: "My Cousin Vinnie", correct: false },
+        { text: "Avatar", correct: true },
+        { text: "The Godfather", correct: false },
       ],
     },
   ];
@@ -162,11 +162,11 @@ function showResults() {
     } else if (percentage >= 80) {
          resultMessage.textContent = "Great Job! You know your stuff!"
     } else if (percentage >= 60) {
-         resultMessage.textContent = "Good effort! Keep learning!";
+         resultMessage.textContent = "Good effort!";
     } else if (percentage >= 40) {
          resultMessage.textContent = "Not bad! Try again to improve!";
     } else{
-         resultMessage.textContent = "Keep studying! You'll get better!";
+         resultMessage.textContent = "Keep trying! You'll get better!";
     }
 }
 
